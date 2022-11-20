@@ -1,6 +1,10 @@
-This is a scaffold for an FCL NextJS Dapp on the Flow Blockchain.
+# Twitter3 
 
-This scaffold provides:
+![image](https://user-images.githubusercontent.com/27052451/202925591-1053d059-57a5-419c-9884-339ef7ed1001.png)
+
+A companion app to a tutorial I'm writing (in progress) on hackmd.io - SOON!
+
+This app is based on the awesome scaffold by [Chase Fleming](https://github.com/chasefleming/fcl-next-scaffold) which includes stuff like:
 
 - FCL setup and configuration for all networks
 - Discovery for wallet integration (including Emulator)
@@ -8,6 +12,12 @@ This scaffold provides:
 - Authentication
 - CDC file loader
 - Custom hooks
+
+## Install
+
+```bash
+npm i
+``` 
 
 ## Running the App
 
@@ -27,16 +37,4 @@ flow dev-wallet
 
 ```bash
 npm run dev:local:deploy
-```
-
-### Testnet
-
-```bash
-npm run dev:testnet
-```
-
-### Mainnet
-
-```bash
-npm run dev:mainnet
 ```
