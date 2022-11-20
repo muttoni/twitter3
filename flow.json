@@ -10,6 +10,12 @@
 			"aliases": {
 				"emulator": "0xf8d6e0586b0a20c7"
 			}
+		},
+		"Twitter": {
+			"source": "./cadence/contracts/Twitter.cdc",
+			"aliases": {
+				"emulator": "0xf8d6e0586b0a20c7"
+			}
 		}
   },
 	"accounts": {
@@ -19,7 +25,7 @@
 	},
 	"deployments": {
     "emulator": {
-      "emulator-account": ["HelloWorld"]
+      "emulator-account": ["HelloWorld", "Twitter"]
     }
   }
 }

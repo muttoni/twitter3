@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import '../flow/config.js'
-import Links from '../components/Links'
+
 import Container from '../components/Container'
 import useCurrentUser from '../hooks/useCurrentUser'
 
@@ -10,29 +9,18 @@ export default function Home() {
   const { loggedIn } = useCurrentUser()
 
   return (
-    <div className={styles.container}>
+    <div>
 
-      <Navbar />
 
       <Head>
-        <title>FCL Next Scaffold</title>
-        <meta name="description" content="FCL Next Scaffold for the Flow Blockchain" />
+        <title>Twitter 3</title>
+        <meta name="description" content="Twitter3 - thoughts onchain'ed" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          <a href="https://developers.flow.com/tools/fcl-js">FCL</a> Next Scaffold
-        </h1>
-
-        <p className={styles.description}>
-          For the Flow Blockchain
-        </p>
-
+      <main className="container">
+        <Navbar />
         {loggedIn && <Container />}
-
-        <Links />
-
       </main>
     </div>
   )
