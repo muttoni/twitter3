@@ -5,12 +5,6 @@
 		"testnet": "access.devnet.nodes.onflow.org:9000"
 	},
 	"contracts": {
-		"HelloWorld": {
-			"source": "./cadence/contracts/HelloWorld.cdc",
-			"aliases": {
-				"emulator": "0xf8d6e0586b0a20c7"
-			}
-		},
 		"Twitter": {
 			"source": "./cadence/contracts/Twitter.cdc",
 			"aliases": {
@@ -25,7 +19,7 @@
 	},
 	"deployments": {
     "emulator": {
-      "emulator-account": ["HelloWorld", "Twitter"]
+      "emulator-account": ["Twitter"]
     }
   }
 }
